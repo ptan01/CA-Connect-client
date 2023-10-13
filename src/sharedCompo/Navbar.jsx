@@ -19,8 +19,8 @@ const Navbar = () => {
                     
                 </div>
                 <div className={`md:flex space-x-4 ${menuVisible ? 'hidden' : 'block'}`}>
-                    <button className="border-2 border-blue-600 text-blue-600 font-bold px-4 py-2 rounded-lg hover:text-white hover:bg-blue-700">Login</button>
-                    <button className="bg-blue-800 text-white px-4 py-2 rounded-lg hover-bg-blue-700">Register</button>
+                    <button className="border-2 border-blue-500 text-blue-500 font-bold px-4 py-2 rounded-lg hover:text-white hover:bg-blue-600">Login</button>
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register</button>
                 </div>
                 <div className="md:hidden">
                     <button className="text-white" onClick={toggleMenu}>
