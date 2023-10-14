@@ -5,7 +5,7 @@ import img3 from '../../assets/Picture (2).png'
 
 const Banner = () => {
     return (
-        <div className='lg:flex justify-between items-center h-full min-h-[803px]'>
+        <div className='lg:flex justify-between items-center h-full min-h-[803px] md:px-3'>
             <div>
                 <div className='lg:leading-[80px]'>
                     <h1 className="text-6xl font-bold">Find <span className='bg-gradient-to-r from-[#0076CE] to-[#9400D3] text-transparent bg-clip-text'>Partners</span> (CAs) <br /> available online</h1>
