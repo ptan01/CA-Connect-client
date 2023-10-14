@@ -1,3 +1,4 @@
+import AllPlatform from "./AllPlatform";
 import Banner from "./Banner";
 import JoinUs from "./JoinUs";
 
@@ -6,6 +7,7 @@ const Main = () => {
         <div>
             <Banner></Banner>
             <JoinUs></JoinUs>
+            <AllPlatform></AllPlatform>
         </div>
     );
 };
