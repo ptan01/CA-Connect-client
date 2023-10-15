@@ -4,22 +4,38 @@ import img3 from '../../assets/Picture (2).png'
 import { useRef, useState } from 'react';
 import axios from 'axios';
 import CharteredCard from '../../cardComponent/CharteredCard';
+import Swal from 'sweetalert2';
 
 
 const Banner = () => {
 
     const inputRef = useRef(null)
-    const [charteredData , setCharteredData] = useState([])
+    const [charteredData, setCharteredData] = useState([])
 
     const handleSearch = () => {
         const inputValue = inputRef.current.value;
+        if (inputValue.length <= 0) {
+            console.log("please input a value")
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Input Field Is Empty Plese Write Something',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            return
+        }
         console.log(inputValue)
         axios(`https://chartered-accountants-server-ptan01.vercel.app/search-charters/${inputValue}`)
             .then(res => {
                 setCharteredData(res.data)
+                if(res.data <= 0){
+                    Swal.fire('NO file Matched !')
+                }
             })
     }
-
+    
+  
 
     return (
         <>
@@ -42,6 +58,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="lg:flex justify-start items-center">
+               
                 {
                     charteredData.map(chartere => <CharteredCard key={chartere._id} data={chartere} />)
                 }
