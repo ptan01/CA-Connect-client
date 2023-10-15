@@ -41,7 +41,7 @@ const Banner = () => {
                     <img className='lg:relative md:relative top-10' src={img3} alt="" />
                 </div>
             </div>
-            <div className="flex justify-start items-center">
+            <div className="lg:flex justify-start items-center">
                 {
                     charteredData.map(chartere => <CharteredCard key={chartere._id} data={chartere} />)
                 }

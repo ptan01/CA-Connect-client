@@ -50,7 +50,7 @@ const JoinUs = () => {
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:justify-center gap-8 mt-20">
                 {
-                    cardData.map((data, idx) => <JoinUsCard key={idx} cardData={data}></JoinUsCard>)
+                    cardData.map((data, idx) => <JoinUsCard key={idx} serial={idx} cardData={data}></JoinUsCard>)
                 }
             </div>
             <p className="text-center my-4">* For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200 every day until you file the form . There is no maximum penalty amount. So, if you don&apos;t file the form for a year, you will owe ₹73,000 per form</p>
