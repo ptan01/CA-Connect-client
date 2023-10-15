@@ -46,7 +46,7 @@ const Banner = () => {
                         <p> <span className="font-semibold">CONNECT</span> with us where your services are listed and visible to a myriad of businesses seeking CA’s for compliance support</p>
                     </div>
                     <div className="lg:flex md:flex ">
-                        <input className="border w-full max-w-[484px] h-[73px] rounded-xl" type="text" ref={inputRef} name="search" id="" />
+                        <input className="border text-xl p-5 text-blue-500 w-full max-w-[484px] h-[73px] rounded-xl" type="text" ref={inputRef} name="search" id="" />
                         <br />
                         <button onClick={handleSearch} className="bg-blue-500 text-white px-4 py-2 h-[73px] w-[186px] rounded-lg hover:bg-blue-700">Search</button>
                     </div>
