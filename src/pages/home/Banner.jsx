@@ -20,16 +20,6 @@ const Banner = () => {
             })
     }
 
-    const personData = {
-        name: 'John Doe',
-        img: 'path-to-image.jpg',
-        intro: 'Freelance Developer',
-        rating: 4.5,
-        taskComplexity: 'Medium',
-        deliveryTime: '3 days',
-        price: '$50/hr',
-      };
-
 
     return (
         <>

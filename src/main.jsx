@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Main from './pages/home/Main'
 import MainLayout from './layout/MainLayout'
+import Details from './pages/details/Details'
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Main></Main>
+      },
+      {
+        path: "/details/:id",
+        element: <Details></Details>
       }
     ]
   }
