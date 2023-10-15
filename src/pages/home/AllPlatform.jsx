@@ -6,7 +6,7 @@ import wimg from "../../assets/Pexels Photo by MART PRODUCTION.png"
 
 const AllPlatform = () => {
     return (
-        <div className="lg:flex justify-center items-center gap-4 container">
+        <div className="lg:flex justify-center items-center gap-4 container mt-20">
             <div className="lg:w-1/2">
 
                 <h1 className="text-6xl font-bold leading-[95px]"><span className="bg-gradient-to-r from-[#0076CE] to-[#9400D3] text-transparent bg-clip-text">All-in-One platform</span><br /> that Makes Easier</h1>

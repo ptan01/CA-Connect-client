@@ -1,9 +1,20 @@
 import img1 from '../../assets/Picture.png'
 import img2 from '../../assets/Picture (1).png'
 import img3 from '../../assets/Picture (2).png'
+import { useRef } from 'react';
 
 
 const Banner = () => {
+
+    const inputRef = useRef(null)
+
+    const handleSearch = ()=>{
+        const inputValue = inputRef.current.value ;
+        console.log(inputValue)
+    }
+
+
+
     return (
         <div className='lg:flex justify-between items-center h-full min-h-[803px] md:px-3'>
             <div>
@@ -12,9 +23,9 @@ const Banner = () => {
                     <p> <span className="font-semibold">CONNECT</span> with us where your services are listed and visible to a myriad of businesses seeking CA’s for compliance support</p>
                 </div>
                 <div className="lg:flex md:flex ">
-                    <input className="border w-full max-w-[484px] h-[73px] rounded-xl" type="text" name="" id="" />
+                    <input className="border w-full max-w-[484px] h-[73px] rounded-xl" type="text" ref={inputRef} name="search" id="" />
                     <br />
-                    <button className="bg-blue-500 text-white px-4 py-2 h-[73px] w-[186px] rounded-lg hover:bg-blue-700">Search</button>
+                    <button onClick={handleSearch} className="bg-blue-500 text-white px-4 py-2 h-[73px] w-[186px] rounded-lg hover:bg-blue-700">Search</button>
                 </div>
             </div>
             <div className='lg:flex md:flex gap-4 block'>
