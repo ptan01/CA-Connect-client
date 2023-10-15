@@ -14,7 +14,7 @@ const Banner = () => {
     const handleSearch = () => {
         const inputValue = inputRef.current.value;
         console.log(inputValue)
-        axios(`http://localhost:5000/search-charters/${inputValue}`)
+        axios(`https://chartered-accountants-server-ptan01.vercel.app/search-charters/${inputValue}`)
             .then(res => {
                 setCharteredData(res.data)
             })

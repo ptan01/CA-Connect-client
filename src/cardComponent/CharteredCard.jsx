@@ -14,7 +14,7 @@ const CharteredCard = ({ data }) => {
   } = data;
 
   return (
-      <Link to={`/details/:${_id}`}>
+      <Link to={`/details/${_id}`}>
         <div className="bg-white shadow-md rounded-md p-4 m-2">
           <h3 className="text-xl font-semibold text-gray-800 mt-2">{name}</h3>
           <p className="text-sm text-gray-600">{intro}</p>
